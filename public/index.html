@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icons8-calculator.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e000e" />
+    <title>Ultimate Calculator</title>
+	<meta property="og:title" content="Ultimate Calculator" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="Ultimate--calc.com" />
+	<meta property="og:image" content="%PUBLIC_URL%/icons8-calculator.gif" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:description" content="A calculator built to solve the ambiguous mathematical equations">
+	<meta property="og:site_name" content="ultimate-calc.vercel.app">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons8-calculator.gif" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/unique.css">
+	<script id="Mathjax-js" async src="%PUBLIC_URL%/tex-chtml-full.js"></script>
+  </head>
+  <body class="is-preload">
+	<div id="wrapper" class="fade-in">
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="not">
+			<div class="note" role="status">
+				<svg height="100" width="100" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+					viewBox="0 0 291.764 291.764" xml:space="preserve">
+					<g>
+						<path class="path" style="fill:#EAEDED;" d="M36.47,0h218.824c10.066,0,18.235,8.169,18.235,18.235v255.294c0,10.066-8.169,18.235-18.235,18.235
+							H36.47c-10.066,0-18.235-8.169-18.235-18.235V18.235C18.234,8.16,26.404,0,36.47,0z"/>
+						<path class="path" style="fill:#D3D6D8;" d="M45.587,27.353h200.588v63.824H45.587V27.353z"/>
+						<path class="path" style="fill:#B7BBBD;" d="M191.47,45.588v27.353h36.471V45.588H191.47z M218.823,63.824h-18.235v-9.118h18.235V63.824z"/>
+						<path class="path" style="fill:#49616E;" d="M45.587,154.991h36.471V118.52H45.587V154.991z M100.293,154.991h36.471V118.52h-36.471V154.991z
+							M154.999,118.529V155h36.471v-36.471H154.999z M45.587,209.697h36.471v-36.461H45.587V209.697z M100.293,209.697h36.471v-36.461
+							h-36.471V209.697z M154.999,209.697h36.471v-36.461h-36.471V209.697z M45.587,264.403h36.471v-36.471H45.587V264.403z
+							M100.293,264.403h36.471v-36.471h-36.471V264.403z M154.999,264.403h36.471v-36.471h-36.471V264.403z"/>
+						<path class="path" style="fill:#E2574C;" d="M209.705,118.529V155h36.471v-36.471H209.705z M209.705,264.403h36.471v-91.167h-36.471V264.403z"/>
+					</g>
+				</svg>
+			</div>
+			<div class="loading" style="font-size: 16px; text-align: center">Loading</div>
+
+		</div>
+		<div id="load">
+			<div id="root"></div>
+		</div>
+		</div>
+    
+
+    <script>
+			document.getElementById('load').style.display='none';
+			function hide(){
+				document.getElementById('not').style.display='none'
+				document.getElementById('load').style.display='block'
+			}
+			function call(){
+				setTimeout(hide,1500)
+			}
+			window.addEventListener('DOMContentLoaded', call)
+			document.getElementById("wrapper").style.minHeight="fit-content"
+			
+	</script>
+	<script src="%PUBLIC_URL%/jquery.min.js"></script>
+	<script src="%PUBLIC_URL%/jquery.scrollex.min.js"></script>
+	<script src="%PUBLIC_URL%/jquery.scrolly.min.js"></script>
+	<script src="%PUBLIC_URL%/browser.min.js"></script>
+	<script src="%PUBLIC_URL%/breakpoints.min.js"></script>
+	<script src="%PUBLIC_URL%/util.js"></script>
+	<script src="%PUBLIC_URL%/parse.js"></script>
+	<script src="%PUBLIC_URL%/main.js"></script>
+  </body>
+</html>
